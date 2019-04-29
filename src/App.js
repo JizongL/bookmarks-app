@@ -3,6 +3,7 @@ import AddBookmark from './AddBookmark/AddBookmark';
 import BookmarkList from './BookmarkList/BookmarkList';
 import BookmarksContext from './BookmarksContext'
 import EditBookmark from './EditBookmark/EditBookmark'; 
+import BookmarkItem from './BookmarkItem/BookmarkItem'
 import Nav from './Nav/Nav';
 import config from './config';
 import './App.css';
@@ -88,6 +89,11 @@ class App extends Component {
               exact
               path='/'
               component={BookmarkList}
+            />
+            <Route
+              
+              path='/:bookmarkId'
+              component={BookmarkItem}
             />
             <Route
               path='/add-bookmark'
